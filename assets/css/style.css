@@ -48,12 +48,6 @@ body {
   font-size: 14px;
 }
 
-@media only screen and (max-width: 993px) {
-  .fs-32 {
-    font-size: 24px;
-  }
-}
-
 .bg--green {
   background-color: var(--cl-green);
 }
@@ -124,6 +118,7 @@ body {
 }
 
 .order-button {
+  width: max-content;
   border-radius: 8px;
   padding: 10px 20px;
   font-weight: 300;
@@ -167,6 +162,19 @@ body {
   height: 8px !important;
 }
 
+.custom-flex {
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+
+.mobile-rate {
+  display: none !important;
+}
+
+.d-t-block {
+  display: none !important;
+}
+
 @media (min-width: 1400px) {
   .container,
   .container-lg,
@@ -185,6 +193,9 @@ body {
 }
 
 @media (max-width: 992px) {
+  .fs-32 {
+    font-size: 24px;
+  }
   .fs-md-24 {
     font-size: 24px;
   }
@@ -195,20 +206,82 @@ body {
     font-size: 16px;
   }
   .fs-md-14 {
-    font-size: 14px;
+    font-size: 14px !important;
+  }
+  .social-media {
+    margin-bottom: 20px;
   }
 }
 
-/* @media (max-width: 768px) {
-  .fs-md-24 {
-    font-size: 24px;
+@media (max-width: 576px) {
+  .container,
+  .container-sm {
+    max-width: 860px !important;
   }
 
-  .fs-md-16 {
-    font-size: 16px;
+  .custom-flex {
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-hr {
+    background-color: rgb(187, 187, 187);
+    height: 1px;
+    width: 100%;
+    margin-bottom: 20px !important;
+    margin-top: 20px !important;
   }
 
-  .fs-md-14 {
-    font-size: 14px;
+  .mt-sm-20 {
+    margin-top: 20px;
   }
-} */
+
+  .mt-sm-10 {
+    margin-top: 10px;
+  }
+
+  .mb-sm-20 {
+    margin-bottom: 20px;
+  }
+
+  .mb-sm-10 {
+    margin-bottom: 10px;
+  }
+
+  .mb-sm-05 {
+    margin-bottom: 5px !important;
+  }
+
+  .bg-stars-mobile {
+    background-image: url("../img/yellow-star.svg");
+    width: 135px;
+    height: 18px;
+    display: block;
+    background-size: 27px;
+    background-position: center;
+    margin-left: -5px;
+  }
+
+  .desktop-rate {
+    display: none !important;
+  }
+
+  .mobile-rate {
+    display: flex !important;
+  }
+
+  .btn-100 {
+    width: 100%;
+  }
+
+  .d-t-none {
+    display: none !important;
+  }
+
+  .d-t-block {
+    display: block !important;
+  }
+}

@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <button class="py-2 border-0 bg--orange text-white order-button">
+    <button class="py-2 border-0 bg--orange text-white order-button fs-md-14">
 
         <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
             style="color: #fff">
@@ -29,13 +29,15 @@
     <!-- Navbar -->
     <nav class="navbar bg--green py-2">
         <div class="container-sm">
-            <a class="navbar-brand cursor-pointer text-uppercase fs-4 text-white fw-normal"><span
-                    class="bg-white p-1 me-2 text--green rounded-2 fw-semibold">PRO</span>Репетитор</a>
+            <a class="fs-md-14 navbar-brand cursor-pointer text-uppercase fs-24 text-white fw-normal">
+                <span class="bg-white p-1 text--green rounded-2 fw-semibold fs-md-14">PRO</span>
+                Репетитор
+            </a>
 
             <div class="me-2">
-                <span class="text-white text-ss fw-normal">
-                    <a class="text-decoration-none text-white" href="#">Вход</a> / <a
-                        class="text-decoration-none text-white" href="#">Регистрация</a>
+                <span class="text-white text-ss fw-normal fs-md-14">
+                    <a class="text-decoration-none text-white fs-md-14" href="#">Вход</a> / <a
+                        class="text-decoration-none text-white fs-md-14" href="#">Регистрация</a>
                 </span>
             </div>
         </div>
@@ -47,26 +49,39 @@
                 <img class="w-100 rounded-3" src="./assets/img/teacher.jpg" alt="teacher">
             </div>
             <div class="col-lg-5 col-md-5">
-                <span class="info_name fs-32 fw-semibold mb-3 d-block">
+                <span class="info_name fs-32 fw-semibold mb-3 d-block fs-md-20 mt-sm-20 mb-sm-05">
                     Рида Оганесовна
                 </span>
-                <span class="info_online d-flex align-items-center gap-1 mb-2">
+                <span class="info_online d-flex align-items-center gap-1 mb-2 fs-md-14">
                     <div class="bg--green rounded-5"></div>
                     Онлайн
                 </span>
-                <span class="info_practice">Опыт: с 2001 года</span>
-                <span class="info_title fs-24 fw-semibold d-block my-3">
+
+                <div class="d-flex gap-2 mobile-rate">
+                    <div>
+                        <span class="bg-stars-mobile"></span>
+                    </div>
+                    <span class="info_fee fs-14 text--gray d-block">
+                        5.0
+                    </span>
+                    <a class="fs-14 gray--hover text--gray text-decoration-none w-100" href="#">
+                        (6 отзывов)
+                    </a>
+                </div>
+
+                <span class="info_practice fs-md-14">Опыт: с 2001 года</span>
+                <span class="info_title fs-24 fw-semibold d-block my-3 fs-md-16 d-t-none">
                     Предметы
                 </span>
-                <span class="info_subjects d-block mb-4">
+                <span class="info_subjects d-block mb-4 fs-md-14 d-t-none">
                     Алгебра, Геометрия, Математика, Физика
                 </span>
                 <button
-                    class="py-2 border-0 text-uppercase custom-shadow btn-orange btn-lg bg--orange rounded-1 text-white px-md-3 px-lg-5 px-sm-5 width-100">Написать
+                    class="btn-100 mt-sm-10 py-2 border-0 text-uppercase custom-shadow btn-orange btn-lg bg--orange rounded-1 text-white px-md-3 px-lg-5 px-sm-5 fs-md-14">Написать
                     сообщение</button>
 
             </div>
-            <div class="col-lg-3 col-md-3 text-end">
+            <div class="col-lg-3 col-md-3 text-end desktop-rate">
                 <span class="info_fee fs-24 fw-semibold mb-2 d-block fs-md-20">
                     540 руб/час
                 </span>
@@ -86,20 +101,33 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8">
-                <span class="fs-24 fw-semibold mb-3 d-block">Обо мне</span>
-                <span class="fs-18 mb-5 d-block">
+                <span class="info_title fs-24 fw-semibold d-block fs-md-16 d-t-block">
+                    Предметы
+                </span>
+                <span class="info_subjects d-block mb-4 fs-md-14 d-t-block">
+                    Алгебра, Геометрия, Математика, Физика
+                </span>
+
+                <div class="custom-hr mb-5"></div>
+
+                <span class="fs-24 fw-semibold mb-3 d-block fs-md-16">Обо мне</span>
+                <span class="fs-18 d-block fs-md-14">
                     Коммуникабельная, доброжелательная, компетентная. Обладаю умениями доступно объяснять трудный
                     материал, могу решить любую задачу.
                 </span>
 
-                <span class="fs-24 fw-semibold mb-3 d-block">Образование</span>
-                <span class="fs-18 mb-5 d-block">
+                <div class="custom-hr mb-5"></div>
+
+                <span class="fs-24 fw-semibold mb-3 d-block fs-md-16">Образование</span>
+                <span class="fs-18 d-block fs-md-14">
                     Высшее педагогическое (физико-математическое) образование, МГПУ, 1979.
                 </span>
 
-                <span class="fs-24 fw-semibold mb-3 d-block">Цены и уровни</span>
+                <div class="custom-hr mb-5"></div>
 
-                <ul class="p-0 p-custom mb-5">
+                <span class="fs-24 fw-semibold mb-3 d-block fs-md-16">Цены и уровни</span>
+
+                <ul class="p-0 p-custom">
                     <li class="li-price justify-content-between">
                         <div class="info-time d-inline-block">
                             <span class="fs-16 fs-md-14">5 — 9 классы (60 мин)</span>
@@ -120,15 +148,19 @@
                     </li>
                 </ul>
 
-                <span class="fs-24 fw-semibold mb-3 d-block">Место проведения</span>
-                <span class="fs-18 mb-5 d-block">
+                <div class="custom-hr mb-5"></div>
+
+                <span class="fs-24 fw-semibold mb-3 d-block fs-md-16">Место проведения</span>
+                <span class="fs-18 d-block fs-md-14">
                     Онлайн
                 </span>
 
-                <span class="fs-24 fw-semibold mb-3 d-block">Отзывы и рейтинг</span>
+                <div class="custom-hr mb-5"></div>
+
+                <span class="fs-24 fw-semibold mb-3 d-block fs-md-16">Отзывы и рейтинг</span>
 
                 <div class="row mb-3">
-                    <div class="col-lg-5 col-md-3">
+                    <div class="col-lg-5 col-md-3 col-sm-2">
                         <div class="d-flex gap-3">
                             <span class="fs-32 fw-semibold">
                                 5.0
@@ -444,7 +476,7 @@
                     </div>
                 </div>
 
-                <span class="fs-24 fw-semibold mb-3 d-block">Продолжительность занятий</span>
+                <span class="fs-24 fw-semibold mb-3 d-block fs-md-16">Продолжительность занятий</span>
 
                 <div class="d-flex gap-3 mb-5">
                     <div class="bg--green py-2 px-3 rounded-3 text-white fs-md-14">
@@ -460,7 +492,7 @@
                     </div>
                 </div>
 
-                <span class="fs-24 fw-semibold mb-3 d-block">Поделиться с друзьями</span>
+                <span class="fs-24 fw-semibold mb-3 d-block fs-md-16">Поделиться с друзьями</span>
 
                 <div class="d-flex gap-2 social-media">
                     <a href="#">
@@ -485,20 +517,20 @@
 
     <div class="container_fluid border-top">
         <div class="container footer-custom-padding">
-            <div class="d-flex justify-content-between">
+            <div class="d-flex justify-content-between custom-flex">
                 <div class="footer-info">
-                    <span class="fs-18 fw-semibold d-block mb-3">Поддержка пользователей</span>
-                    <a class="fs-18 text-decoration-none text--black d-block" href="#">help@protutor.by</a>
-                    <a class="fs-18 text-decoration-none text--black d-block" href="#">+375 (29) 303-50-50</a>
+                    <span class="fs-18 fw-semibold d-block mb-3 fs-md-14">Поддержка пользователей</span>
+                    <a class="fs-18 text-decoration-none text--black d-block fs-md-14" href="#">help@protutor.by</a>
+                    <a class="fs-18 text-decoration-none text--black d-block fs-md-14" href="#">+375 (29) 303-50-50</a>
                 </div>
 
                 <div class="footer-logo">
-                    <a class="navbar-brand cursor-pointer text-uppercase fs-4 text--green fw-normal"><span
+                    <a class="navbar-brand cursor-pointer text-uppercase fs-4 text--green fw-normal fs-md-14"><span
                             class="bg--green p-1 me-2 text-white rounded-2 fw-semibold">PRO</span>Репетитор</a>
-                    <span class="footer-copyright fs-16 d-block">
+                    <span class="footer-copyright fs-16 d-block fs-md-14">
                         ©2016-2022 Репетитор
                     </span>
-                    <span class="footer-copyright fs-16 d-block">
+                    <span class="footer-copyright fs-16 d-block fs-md-14">
                         репетиторы математики по всей России
                     </span>
                 </div>
