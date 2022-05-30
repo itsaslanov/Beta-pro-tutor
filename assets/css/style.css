@@ -284,4 +284,9 @@ body {
   .d-t-block {
     display: block !important;
   }
+
+  .info_online div {
+    width: 8px !important;
+    height: 8px !important;
+  }
 }
