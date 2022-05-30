@@ -23,31 +23,6 @@ body {
   color: var(--cl-black);
 }
 
-/* reuseable classes */
-.fs-32 {
-  font-size: 32px;
-}
-
-.fs-24 {
-  font-size: 24px;
-}
-
-.fs-20 {
-  font-size: 20px;
-}
-
-.fs-18 {
-  font-size: 18px;
-}
-
-.fs-16 {
-  font-size: 16px;
-}
-
-.fs-14 {
-  font-size: 14px;
-}
-
 .bg--green {
   background-color: var(--cl-green);
 }
@@ -78,6 +53,31 @@ body {
 
 .gray--hover:hover {
   color: var(--cl-green);
+}
+
+/* reuseable classes */
+.fs-32 {
+  font-size: 32px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-14 {
+  font-size: 14px;
 }
 
 .mt-30 {
@@ -173,6 +173,49 @@ body {
 
 .d-t-block {
   display: none !important;
+}
+
+.header-banner {
+  background-image: url("../img/banner.jpg");
+  padding: 55px 0;
+  background-size: auto;
+  background-size: cover;
+}
+
+.hero-title {
+  font-size: 32px;
+  line-height: 41px;
+  margin-bottom: 38px;
+  max-width: 490px;
+}
+
+.hero-description {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 50px;
+  max-width: 390px;
+}
+
+.header-form {
+  width: 412px;
+  background: #f8f9fb;
+  border-radius: 8px;
+  padding: 34px 24px 44px;
+}
+
+.form-select {
+  font-weight: 100;
+}
+
+.form-select:focus  {
+  border: 2px solid var(--cl-green) !important;
+  outline: 0 !important;
+  font-family: 'Gotham';
+  font-weight: 100;
+}
+
+.custom-select {
+  width: 100%;
 }
 
 @media (min-width: 1400px) {
