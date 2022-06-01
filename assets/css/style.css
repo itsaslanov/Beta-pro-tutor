@@ -203,19 +203,55 @@ body {
   padding: 34px 24px 44px;
 }
 
-.form-select {
-  font-weight: 100;
-}
-
-.form-select:focus  {
-  border: 2px solid var(--cl-green) !important;
-  outline: 0 !important;
-  font-family: 'Gotham';
-  font-weight: 100;
-}
-
 .custom-select {
+  position: relative;
   width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #e1e1e1;
+  background-color: #fff;
+  font-family: "Gothampro";
+  font-weight: 300;
+  -webkit-appearance: none;
+  font-size: 16px;
+}
+
+.arrow-up {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  background: url("../img/arrow-up.svg");
+  width: 24px;
+  height: 24px;
+  right: 4px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-reg {
+  padding: 12px 0px !important;
+}
+
+.custom-select > * {
+  font-family: sans-serif !important;
+  font-weight: 500 !important;
+}
+
+.header-form::before {
+  content: "";
+  position: absolute;
+  left: 400px;
+  bottom: 120px;
+  width: 288px;
+  height: 58px;
+  display: block;
+  background: url("/assets/img/header-arrow.svg") no-repeat;
+}
+
+@media (max-width: 1199px) {
+  .header-form::before {
+    display: none;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -235,6 +271,8 @@ body {
   }
 }
 
+
+
 @media (max-width: 992px) {
   .fs-32 {
     font-size: 24px;
@@ -253,6 +291,41 @@ body {
   }
   .social-media {
     margin-bottom: 20px;
+  }
+
+  .form-side {
+    justify-content: center !important;
+    flex-direction: column !important;
+  }
+
+
+
+
+  .right-side,
+  .left-side {
+    width: 100%;
+  }
+  
+  .header-form {
+    background-color: transparent;
+    width: 100%;
+    padding: 0;
+  }
+
+  .header-banner {
+    padding: 20px 0;
+  }
+
+  .hero-title {
+    margin-bottom: 10px;
+  }
+
+  .hero-description {
+    margin-bottom: 20px;
+  }
+
+  .d-n-992 {
+    display: none;
   }
 }
 
