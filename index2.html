@@ -197,18 +197,6 @@
                             class="w-100 fs-14 mt-sm-10 py-3 border-0 text-uppercase custom-shadow bg--green bg--green-hover btn-lg rounded-1 text-white px-md-3 px-lg-5 px-sm-5 fs-md-14">Применить</button>
                     </div>
                 </form>
-
-                <script>
-                    let clearBtn = document.querySelector("#clearBtn");
-                    let select = document.querySelectorAll(".clear-options")
-
-                    clearBtn.addEventListener("click", (e) => {
-                        for(let i = 0; i < select.length; i++) {
-                            select[i].selectedIndex = 0
-                        }
-                        e.preventDefault();
-                    })
-                </script>
             </div>
             <div class="col-lg-8">
                 <div class="big-card bg--gray-light d-b-b">
@@ -709,22 +697,7 @@
     <script src="./assets/css/bootstrap/popper.min.js"></script>
     <script src="./assets/css/bootstrap/bootstrap.min.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            loop: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-    </script>
+    <script src="/assets/js/app.js"></script>
 </body>
 
 </html>
