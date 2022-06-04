@@ -21,8 +21,7 @@
                 <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal"
                     aria-label="Close"></button>
 
-
-                    <a class="text-decoration-none text-white fs-md-14" data-bs-toggle="modal" href="#signIn"
+                <a class="text-decoration-none text-white fs-md-14" data-bs-toggle="modal" href="#signIn"
                     role="button">Вход</a>
 
                 <div class="modal-body">
@@ -32,14 +31,13 @@
                         <div class="d-flex justify-content-between mb-4">
                             <a class="modal-link" data-bs-target="#forgotPassword" data-bs-toggle="modal"
                                 role="button">Забыли пароль?</a>
-                            <a href="#" class="modal-link">Регистрация</a>
+                            <a class="modal-link" data-bs-target="#signUp" data-bs-toggle="modal"
+                                role="button">Регистрация</a>
                         </div>
                         <button
                             class="w-100 fs-14 mt-sm-10 py-3 border-0 text-uppercase custom-shadow bg--green bg--green-hover btn-lg rounded-1 text-white px-md-3 px-lg-5 px-sm-5 fs-md-14">Войти</button>
                     </form>
                 </div>
-                <!-- <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open
-                        second modal</button> -->
             </div>
         </div>
     </div>
@@ -56,12 +54,46 @@
                     <form action="#">
                         <input type="email" class="form-controller" name="email" placeholder="Email" required />
                         <div class="d-flex justify-content-between mb-4">
-                            <a href="#" class="modal-link" data-bs-toggle="modal" data-bs-target="#signIn" role="button">Вход</a>
-                            <a href="#" class="modal-link">Регистрация</a>
+                            <a class="modal-link" data-bs-toggle="modal" data-bs-target="#signIn"
+                                role="button">Вход</a>
+                            <a class="modal-link" data-bs-target="#signUp" data-bs-toggle="modal"
+                            role="button">Регистрация</a>
                         </div>
                         <button
                             class="w-100 fs-14 mt-sm-10 py-3 border-0 text-uppercase custom-shadow bg--green bg--green-hover btn-lg rounded-1 text-white px-md-3 px-lg-5 px-sm-5 fs-md-14">Восстановить
                             пароль</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SIGN UP -->
+    <div class="modal" id="signUp" aria-hidden="true" aria-labelledby="signUpToggle" tabindex="-1">
+        <div class="modal-dialog d-flex justify-content-center align-items-center">
+            <div class="modal-content position-relative custom-dialog bg--gray-light">
+                <h3 class="fs-24 text-center fw-semibold">Регистрация заказчика</h3>
+                <a class="modal-link d-b mx-auto my-2" data-bs-target="#forgotPassword" data-bs-toggle="modal"
+                    role="button">Регистрация репетитора</a>
+                <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+
+                <div class="modal-body">
+                    <form action="#">
+                        <input type="text" class="form-controller" name="name" placeholder="Имя" required />
+                        <input type="number" class="form-controller" name="phone" placeholder="Phone" required />
+                        <input type="email" class="form-controller" name="email" placeholder="Email" required />
+                        <input type="password" class="form-controller" name="password" placeholder="Пароль" required />
+                        <input type="password" class="form-controller" name="password" placeholder="Повторите пароль" required />
+                        <button
+                            class="w-100 fs-14 mt-sm-10 py-3 border-0 text-uppercase custom-shadow bg--green bg--green-hover btn-lg rounded-1 text-white px-md-3 px-lg-5 px-sm-5 fs-md-14">Зарегистрироваться</button>
+                        <div class="d-flex justify-content-center align-items-center my-3">
+                            <a href="#" class="modal-link text-uppercase" data-bs-toggle="modal" data-bs-target="#signIn"
+                            role="button">Вход</a>
+                        </div>
+                        <p class="text-center fs-14 mb-0">
+                            Регистрируясь, вы соглашаетесь с <a class="modal-link" href="#">политикой конфиденциальности</a> и <a class="modal-link" href="#">договором оферты.</a>
+                        </p>
                     </form>
                 </div>
             </div>
@@ -96,7 +128,8 @@
                 <span class="text-white text-ss fw-normal fs-md-14">
                     <a class="text-decoration-none text-white fs-md-14" data-bs-toggle="modal" href="#signIn"
                         role="button">Вход</a> /
-                    <a class="text-decoration-none text-white fs-md-14" href="#">Регистрация</a>
+                    <a class="text-decoration-none text-white fs-md-14" data-bs-target="#signUp" data-bs-toggle="modal"
+                    role="button">Регистрация</a>
                 </span>
             </div>
         </div>
