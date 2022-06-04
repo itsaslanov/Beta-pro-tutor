@@ -12,8 +12,66 @@
 </head>
 
 <body>
+
+    <!-- SIGN IN MODAL -->
+    <div class="modal" id="signIn" aria-hidden="true" aria-labelledby="signInToggle" tabindex="-1">
+        <div class="modal-dialog d-flex justify-content-center align-items-center">
+            <div class="modal-content position-relative custom-dialog bg--gray-light">
+                <h3 class="fs-24 text-center fw-semibold">Вход</h3>
+                <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+
+
+                    <a class="text-decoration-none text-white fs-md-14" data-bs-toggle="modal" href="#signIn"
+                    role="button">Вход</a>
+
+                <div class="modal-body">
+                    <form action="#">
+                        <input type="email" class="form-controller" name="email" placeholder="Email" required />
+                        <input type="password" class="form-controller" name="password" placeholder="Пароль" required />
+                        <div class="d-flex justify-content-between mb-4">
+                            <a class="modal-link" data-bs-target="#forgotPassword" data-bs-toggle="modal"
+                                role="button">Забыли пароль?</a>
+                            <a href="#" class="modal-link">Регистрация</a>
+                        </div>
+                        <button
+                            class="w-100 fs-14 mt-sm-10 py-3 border-0 text-uppercase custom-shadow bg--green bg--green-hover btn-lg rounded-1 text-white px-md-3 px-lg-5 px-sm-5 fs-md-14">Войти</button>
+                    </form>
+                </div>
+                <!-- <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open
+                        second modal</button> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- FORGOT PASSWORD? -->
+    <div class="modal" id="forgotPassword" aria-hidden="true" aria-labelledby="forgotPasswordToggle" tabindex="-1">
+        <div class="modal-dialog d-flex justify-content-center align-items-center">
+            <div class="modal-content position-relative custom-dialog bg--gray-light">
+                <h3 class="fs-24 text-center fw-semibold">Восстановить пароль</h3>
+                <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+
+                <div class="modal-body">
+                    <form action="#">
+                        <input type="email" class="form-controller" name="email" placeholder="Email" required />
+                        <div class="d-flex justify-content-between mb-4">
+                            <a href="#" class="modal-link" data-bs-toggle="modal" data-bs-target="#signIn" role="button">Вход</a>
+                            <a href="#" class="modal-link">Регистрация</a>
+                        </div>
+                        <button
+                            class="w-100 fs-14 mt-sm-10 py-3 border-0 text-uppercase custom-shadow bg--green bg--green-hover btn-lg rounded-1 text-white px-md-3 px-lg-5 px-sm-5 fs-md-14">Восстановить
+                            пароль</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- fixed button -->
-    <button class="py-2 border-0 bg--orange text-white order-button fs-md-14 d-flex justify-content-center align-items-center gap-2">
+    <button
+        class="py-2 border-0 bg--orange text-white order-button fs-md-14 d-flex justify-content-center align-items-center gap-2">
         <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
             style="color: #fff">
             <path
@@ -36,8 +94,9 @@
 
             <div class="me-2">
                 <span class="text-white text-ss fw-normal fs-md-14">
-                    <a class="text-decoration-none text-white fs-md-14" href="#">Вход</a> / <a
-                        class="text-decoration-none text-white fs-md-14" href="#">Регистрация</a>
+                    <a class="text-decoration-none text-white fs-md-14" data-bs-toggle="modal" href="#signIn"
+                        role="button">Вход</a> /
+                    <a class="text-decoration-none text-white fs-md-14" href="#">Регистрация</a>
                 </span>
             </div>
         </div>
@@ -513,7 +572,6 @@
             </div>
         </div>
     </div>
-
     <!-- Footer -->
     <div class="container_fluid border-top">
         <div class="container footer-custom-padding">
@@ -539,8 +597,6 @@
         </div>
     </div>
     <script src="./assets/css/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="./assets/css/bootstrap/popper.min.js"></script>
-    <script src="./assets/css/bootstrap/bootstrap.min.js"></script>
 </body>
 
 </html>
