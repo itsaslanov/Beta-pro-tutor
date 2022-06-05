@@ -979,6 +979,14 @@ a:link {
   }
 }
 
+.active-border {
+  border: 1px solid red !important;
+}
+
 .text-decoration-none {
   text-decoration: none !important;
+}
+
+#quickStep {
+  display: none;
 }
