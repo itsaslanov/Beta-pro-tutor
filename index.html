@@ -107,8 +107,6 @@
         <div class="modal-dialog d-flex justify-content-center align-items-center">
             <div class="modal-content position-relative custom-dialog bg--gray-light">
                 <h3 class="fs-24 text-center fw-semibold">Регистрация репетитора</h3>
-                <a class="modal-link d-b mx-auto my-2" data-bs-target="#forgotPassword" data-bs-toggle="modal"
-                    role="button">Регистрация репетитора</a>
                 <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal"
                     aria-label="Close"></button>
 
@@ -145,12 +143,8 @@
                         <input type="password" class="form-controller" name="password" placeholder="Повторите пароль"
                             required />
                         <button
-                            class="w-100 fs-14 mt-sm-10 py-3 border-0 text-uppercase custom-shadow bg--green bg--green-hover btn-lg rounded-1 text-white px-md-3 px-lg-5 px-sm-5 fs-md-14">Стать
+                            class="w-100 mb-3 fs-14 mt-sm-10 py-3 border-0 text-uppercase custom-shadow bg--green bg--green-hover btn-lg rounded-1 text-white px-md-3 px-lg-5 px-sm-5 fs-md-14">Стать
                             репетитором</button>
-                        <div class="d-flex justify-content-center align-items-center my-3">
-                            <a href="#" class="modal-link text-uppercase" data-bs-toggle="modal"
-                                data-bs-target="#signIn" role="button">Вход</a>
-                        </div>
                         <p class="text-center fs-14 mb-0">
                             Регистрируясь, вы соглашаетесь с <a class="modal-link" href="#">политикой
                                 конфиденциальности</a>
@@ -247,11 +241,9 @@
         </div>
     </div>
 
-
-
-
     <!-- fixed button -->
-    <button
+    <button data-bs-target="#fasterSignUp" data-bs-toggle="modal"
+    role="button"
         class="py-2 border-0 bg--orange text-white order-button fs-md-14 d-flex justify-content-center align-items-center gap-2">
         <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
             style="color: #fff">
@@ -788,7 +780,6 @@
             e.preventDefault();
             let select = document.querySelectorAll(".border-warning-one");
             if (select[0].value == "selectedValue") {
-        
                 console.log("choose an option")
             } else {
 

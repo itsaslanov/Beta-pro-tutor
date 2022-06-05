@@ -107,8 +107,6 @@
         <div class="modal-dialog d-flex justify-content-center align-items-center">
             <div class="modal-content position-relative custom-dialog bg--gray-light">
                 <h3 class="fs-24 text-center fw-semibold">Регистрация репетитора</h3>
-                <a class="modal-link d-b mx-auto my-2" data-bs-target="#forgotPassword" data-bs-toggle="modal"
-                    role="button">Регистрация репетитора</a>
                 <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal"
                     aria-label="Close"></button>
 
@@ -145,12 +143,8 @@
                         <input type="password" class="form-controller" name="password" placeholder="Повторите пароль"
                             required />
                         <button
-                            class="w-100 fs-14 mt-sm-10 py-3 border-0 text-uppercase custom-shadow bg--green bg--green-hover btn-lg rounded-1 text-white px-md-3 px-lg-5 px-sm-5 fs-md-14">Стать
+                            class="w-100 mb-3 fs-14 mt-sm-10 py-3 border-0 text-uppercase custom-shadow bg--green bg--green-hover btn-lg rounded-1 text-white px-md-3 px-lg-5 px-sm-5 fs-md-14">Стать
                             репетитором</button>
-                        <div class="d-flex justify-content-center align-items-center my-3">
-                            <a href="#" class="modal-link text-uppercase" data-bs-toggle="modal"
-                                data-bs-target="#signIn" role="button">Вход</a>
-                        </div>
                         <p class="text-center fs-14 mb-0">
                             Регистрируясь, вы соглашаетесь с <a class="modal-link" href="#">политикой
                                 конфиденциальности</a>
@@ -161,8 +155,93 @@
         </div>
     </div>
 
+    <!-- FASTER SIGN UP -->
+    <div class="modal" id="fasterSignUp" aria-hidden="true" aria-labelledby="fasterSignUpToggle" tabindex="-1">
+        <div class="modal-dialog d-flex justify-content-center align-items-center">
+            <div class="modal-content position-relative custom-dialog bg--gray-light">
+                <h3 class="fs-24 text-center fw-semibold">Заявка на быстры <br> подбор репетитора</h3>
+                <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+
+                <div class="modal-body">
+                    <form action="#" id="fasterSignUpForm">
+                        <div class="position-relative mb-4">
+                            <span class="arrow-up"></span>
+                            <select class="custom-select bg-white border-warning-one">
+                                <option class="selected" value="selectedValue" disabled selected hidden>По умолчанию
+                                </option>
+                                <option value="1">Алгебра</option>
+                                <option value="2">Английский язык</option>
+                                <option value="3">Белорусский язык</option>
+                                <option value="4">Биология</option>
+                                <option value="5">Высшая математика</option>
+                                <option value="6">География</option>
+                                <option value="7">Дошкольная подготовка</option>
+                                <option value="8">Информатика</option>
+                                <option value="9">История Беларуси</option>
+                                <option value="10">Логопедия</option>
+                                <option value="11">Математика</option>
+                                <option value="12">Начальная школа</option>
+                                <option value="13">Немецкий язык</option>
+                                <option value="14">Польский язык</option>
+                                <option value="15">Программирование</option>
+                                <option value="16">Русский язык</option>
+                                <option value="17">Физика</option>
+                                <option value="18">Химия</option>
+                            </select>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <span class="arrow-up"></span>
+                            <select class="custom-select bg-white border-warning-one">
+                                <option class="selected" value="selectedValue" disabled selected hidden>Возрастная
+                                    категория</option>
+                                <option value="1">Средняя школа</option>
+                                <option value="2">Старшая школа</option>
+                                <option value="3">Взрослые</option>
+                            </select>
+                        </div>
+
+                        <button data-bs-target="#quickStep" data-bs-toggle="modal" role="button"
+                            class="w-100 fs-14 mt-sm-10 py-3 border-0 text-uppercase custom-shadow bg--green bg--green-hover btn-lg rounded-1 text-white px-md-3 px-lg-5 px-sm-5 fs-md-14">Подобрать
+                            бесплатно
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- QUICK STEP -->
+    <div class="modal" id="quickStep" aria-hidden="true" aria-labelledby="quickStepToggle" tabindex="-1">
+        <div class="modal-dialog d-flex justify-content-center align-items-center">
+            <div class="modal-content position-relative custom-dialog bg--gray-light">
+                <h3 class="fs-24 text-center fw-semibold">Остался всего один шаг</h3>
+                <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+
+                <div class="modal-body">
+                    <form action="#" id="fasterSignUpForm">
+                        <input type="number" class="form-controller" name="phone" placeholder="Phone" required />
+                        <input type="text" class="form-controller" name="name" placeholder="Имя" required />
+                        <input type="email" class="form-controller" name="email" placeholder="Email" required />
+
+                        <button
+                            class="w-100 fs-14 mt-sm-10 py-3 border-0 text-uppercase custom-shadow bg--green bg--green-hover btn-lg rounded-1 text-white px-md-3 px-lg-5 px-sm-5 fs-md-14">Отправить
+                            заявку
+                        </button>
+                        <p class="text-center fs-14 mt-3 mb-0">
+                            Оформляя заяку, вы соглашаетесь с
+                            <a class="modal-link" href="#">политикой конфиденциальности</a> и <a class="modal-link"
+                                href="#">договором оферты.</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- fixed button -->
-    <button
+    <button data-bs-target="#fasterSignUp" data-bs-toggle="modal" role="button"
         class="py-2 border-0 bg--orange text-white order-button fs-md-14 d-flex justify-content-center align-items-center gap-2">
         <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
             style="color: #fff">
@@ -252,7 +331,7 @@
                             </select>
                         </div>
 
-                        <button
+                        <button data-bs-target="#quickStep" data-bs-toggle="modal" 
                             class="btn-reg w-100 fs-md-14 btn-100 border-0 text-uppercase custom-shadow btn-orange btn-lg bg--orange rounded-1 text-white fs-md-14">Подобрать
                             бесплатно</button>
                     </form>
@@ -383,7 +462,8 @@
                                 href="#">
                                 (6 отзывов)
                             </a>
-                            <button
+                            <button data-bs-toggle="modal"
+                            data-bs-target="#signUp" role="button"
                                 class="w-100 fs-14 mt-sm-10 py-3 border-0 text-uppercase custom-shadow bg--green bg--green-hover btn-lg rounded-1 text-white px-md-3 px-lg-5 px-sm-5 fs-md-14">Заявка</button>
                         </div>
                     </div>
@@ -858,6 +938,24 @@
         clearBtn.addEventListener("click", (e) => {
             allOptions()
             e.preventDefault();
+        })
+
+        // For faster sign up
+        let fasterSignUp = document.querySelector("#fasterSignUpForm")
+        let headerForm = document.querySelector(".header-form")
+
+        headerForm.addEventListener("click", (e) => {
+            e.preventDefault();
+        });
+
+        fasterSignUp.addEventListener("click", (e) => {
+            e.preventDefault();
+            let select = document.querySelectorAll(".border-warning-one");
+            if (select[0].value == "selectedValue") {
+                console.log("choose an option")
+            } else {
+
+            }
         })
     </script>
 </body>
