@@ -199,6 +199,18 @@ a:link {
   background-size: cover;
 }
 
+.m-custom-10 {
+  margin-top: 10px;
+}
+
+.p-custom-25 {
+  padding-left: 25px;
+}
+
+.p-custom-100 {
+  padding-right: 100px;
+}
+
 .hero-title {
   font-size: 32px;
   line-height: 41px;
@@ -541,6 +553,18 @@ a:link {
   object-position: center;
 }
 
+.w-28 {
+  width: 28px;
+}
+.ml-20 {
+  margin-left: 20px;
+}
+
+.p-t-b-custom {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
 .ul-pagination {
   display: flex;
   justify-content: center;
@@ -715,6 +739,15 @@ a:link {
 }
 
 @media (max-width: 992px) {
+  .p-custom {
+    padding-left: 10px !important;
+  }
+  .m-custom-10 {
+    margin-top: 0px;
+  }
+  .p-custom-25 {
+    padding-left: 10px;
+  }
   .fs-32 {
     font-size: 24px;
   }
@@ -777,6 +810,10 @@ a:link {
 
   .text-center-992 {
     text-align: center;
+  }
+
+  .p-custom-100 {
+    padding-right: 10px;
   }
 
   .section-question {
